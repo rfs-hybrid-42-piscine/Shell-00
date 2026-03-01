@@ -51,10 +51,20 @@ The primary goal of this project is to strip away the graphical user interface (
 Since these are Shell scripts and basic text/configuration files, there is no compilation required. They must be executed using `/bin/sh`.
 
 1. **Clone the repository:**
+   You can clone this module directly, or pull the entire 42 Piscine parent repository which includes this module as a submodule.
+
+   **Option A: Clone this module directly**
    ```bash
-   git clone <your_repository_link>
-   cd 42-Piscine/Shell00
+   git clone git@github.com:rfs-hybrid-42-piscine/Shell-00.git Shell-00
+   cd Shell-00
    ```
+
+   **Option B: Clone the parent repository (with submodules)**
+   ```bash
+   git clone --recurse-submodules git@github.com:rfs-hybrid/42-Piscine.git 42-Piscine
+   cd 42-Piscine/Shell-00
+   ```
+   *(Note: The `--recurse-submodules` flag ensures all nested module repositories are populated immediately.)*
 
 2. **Run Scripts:**
    Navigate to the specific exercise folder and run the `.sh` files using bash or sh:
